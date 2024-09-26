@@ -46,7 +46,7 @@ h5 {
 </style>
     <body>        
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-        <a class="navbar-brand" href="index.php"><h5>OFBMS</h5>            
+        <a class="navbar-brand" href="index.php"><h5>AEROBOOK</h5>            
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -58,8 +58,8 @@ h5 {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">     
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">
-                        <h5> Home</h5>
+                    <a class="nav-link" href="firstpg.php">
+                        <h5> Car rental</h5>
                     </a>
                 </li>                           
             <?php if(isset($_SESSION['userId'])) { ?>
@@ -73,12 +73,12 @@ h5 {
                         <h5> Tickets</h5>
                     </a>
                 </li>                                                                  
-            <?php } ?>
+            <?php }?>
                 <li class="nav-item">
                     <a class="nav-link" href="feedback.php">
                         <h5> Feedback</h5>
                     </a>
-                </li>               
+                </li>           
             </ul>           
             <?php
             if(isset($_SESSION['userId'])) {
