@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Set a background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F4; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #626F47; /* Darker muted green for the header */
+    color: white;
+    text-align: center;
+    padding: 10px; /* Reduced padding for a smaller header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 18px; /* Smaller font size */
+    letter-spacing: 1px; /* Slightly increased letter spacing for elegance */
+}
+
+/* Style the main container */
+.car-container {
+    display: grid; /* Use grid layout for cars */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    max-width: 1200px; /* Max width for container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style each car item */
+.car-item {
+    background-color: white; /* White background for each car */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure corners are rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.car-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Image styling */
+.car-item img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #626F47; /* Border below image */
+}
+
+/* Title and details */
+h2 {
+    font-size: 20px; /* Adjust title size */
+    color: #333;
+    margin: 10px 0;
+    text-align: center; /* Center the title */
+}
+
+p {
+    font-size: 14px; /* Smaller font size for details */
+    margin: 8px 0;
+    text-align: center; /* Center align details */
+}
+
+/* Style the form buttons */
+input[type=submit] {
+    background-color: #626F47; /* Button color to match the palette */
+    color: white;
+    padding: 12px 15px; /* Adjust padding */
+    margin: 10px 0; /* Space between elements */
+    border: none;
+    cursor: pointer;
+    width: 90%; /* Button width */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    display: block; /* Center button */
+    margin-left: auto; /* Center button */
+    margin-right: auto; /* Center button */
+}
+
+input[type=submit]:hover {
+    background-color: #4E5939; /* Slightly darker green for hover effect */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .car-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
