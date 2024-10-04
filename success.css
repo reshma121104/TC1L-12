@@ -1,0 +1,63 @@
+/* success.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f2; /* Soft light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.success-wrapper {
+    background-color: #ffffff; /* White background for the card */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 90%;
+    max-width: 400px; /* Responsive max width */
+}
+
+.success-icon {
+    font-size: 80px; /* Icon size */
+    color: #6ca0a3; /* Warm greenish color */
+    margin-bottom: 25px; /* Space below icon */
+}
+
+h1 {
+    color: #333333; /* Dark gray for contrast */
+    font-size: 26px; /* Slightly larger heading */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+p {
+    color: #555555; /* Medium gray for the text */
+    font-size: 18px; /* Slightly larger font size */
+    margin-bottom: 25px; /* Space below paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px; /* Button padding */
+    background-color: #A5B68D; /* Warm gold color */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Button text size */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #A5B68D; /* Darker gold on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
